@@ -3,12 +3,12 @@ name: Update M3U Playlist
 on:
   schedule:
     - cron: '0 */6 * * *' # Her 6 saatte bir çalışır.
-  workflow_dispatch: # Manuel olarak çalıştırma butonu ekler
+  workflow_dispatch: # Manuel çalıştırma butonu ekler
 
 jobs:
-  build:
+  update-list:
     runs-on: ubuntu-latest
-
+    
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -17,15 +17,14 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
-
+          
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install beautifulsoup4 aiohttp
 
       - name: Run Python script
-        run: |
-          python DiziFunFilm.py
+        run: python DiziFunFilm.py
 
       - name: Commit and push if changes exist
         run: |
