@@ -1,4 +1,4 @@
-name: Update M3U Playlist
+name: Update M3U Playlists
 
 on:
   schedule:
@@ -6,9 +6,9 @@ on:
   workflow_dispatch: # Manuel çalıştırma butonu ekler
 
 jobs:
-  update-list:
+  update-all:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -23,13 +23,16 @@ jobs:
           python -m pip install --upgrade pip
           pip install beautifulsoup4 aiohttp
 
-      - name: Run Python script
+      - name: Run Python script for movies
         run: python DiziFunFilm.py
+
+      - name: Run Python script for TV series
+        run: python DiziFunDizi.py
 
       - name: Commit and push if changes exist
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add filmfun.m3u
-          git commit -m "Güncellenmiş M3U dosyası" || echo "Değişiklik yok"
+          git add filmfun.m3u dizifun.m3u
+          git commit -m "Güncellenmiş M3U dosyaları" || echo "Değişiklik yok"
           git push
