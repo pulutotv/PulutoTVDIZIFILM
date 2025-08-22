@@ -571,19 +571,29 @@ async def process_movies(all_movie_links, output_filename="filmfun.m3u"):
 
 async def main():
     start_time = time.time()
-    
-    
-    movie_urls = await get_movies_from_homepage()
-    if not movie_urls:
-        logger.error("[!] Film listesi boş, seçicileri kontrol et.")
-        return
 
-    
-    await process_movies(movie_urls)
+    # Mevcut filmleri oku
+    existing_links = set()
+    try:
+        with open("filmler.m3u", "r", encoding="utf-8") as f:
+            for line in f:
+                if line.startswith('http'):
+                    existing_links.add(line.strip())
+    except FileNotFoundError:
+        logger.info("filmler.m3u bulunamadı, yeni dosya oluşturulacak.")
+
+    # Siteyi tarayarak tüm film linklerini topla
+    all_movie_links = await get_all_movie_links_from_site() # Bu fonksiyonun adını kendi betiğinizdeki fonksiyona göre düzenleyin
+
+    # Sadece yeni filmleri işle
+    new_movie_urls = [link for link in all_movie_links if link not in existing_links]
+
+    # Yeni filmleri işleyerek M3U dosyasına ekle
+    if new_movie_urls:
+        await process_new_movies(new_movie_urls, "filmler.m3u")
+
+    else:
+        logger.info("Yeni film bulunamadı, filmler.m3u güncel.")
 
     end_time = time.time()
     logger.info(f"\n[✓] Tüm işlemler tamamlandı. Süre: {end_time - start_time:.2f} saniye")
-
-
-if __name__ == "__main__":
-    asyncio.run(main())
