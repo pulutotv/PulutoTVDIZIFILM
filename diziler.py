@@ -666,75 +666,69 @@ async def extract_m3u8_from_episode(session, episode_url, season_num, episode_nu
 
     return episode_name, episode_num, m3u8_url
 
-async def process_series(all_series_links, output_filename="diziler.m3u"):
+async def process_series(all_series_links, output_filename="diziler.m3u"):  # Dosya adı değiştirildi
     """Tüm dizileri tek bir dosyaya yazar"""
-    
-    # Mevcut M3U dosyasını oku ve var olan linkleri topla
-    existing_links = set()
-    try:
-        with open(output_filename, "r", encoding="utf-8") as f:
-            for line in f:
-                if line.startswith('http'):
-                    existing_links.add(line.strip())
-    except FileNotFoundError:
-        pass # Dosya yoksa sorun değil, baştan oluşturulacak.
-
     async with aiohttp.ClientSession(connector=aiohttp.TCPConnector(limit=10)) as session:
-        # Yeni eklenecek dizileri tutacak geçici liste
-        new_series_to_add = []
-        
-        for series_url in all_series_links:
-            if series_url not in existing_links:
-                try:
-                    title, logo_url = await get_series_metadata(session, series_url) # Fonksiyon adını kontrol edin
-                    logger.info(f"\n[+] Yeni içerik bulunuyor: {title}")
-                    
-                    m3u8_url = await extract_m3u8_from_series(session, series_url) # Fonksiyon adını kontrol edin
-                    
-                    if m3u8_url:
-                        tvg_id = sanitize_id(title)
-                        new_series_to_add.append({
-                            'title': title,
-                            'logo_url': logo_url,
-                            'tvg_id': tvg_id,
-                            'm3u8_url': m3u8_url
-                        })
-                    else:
-                        logger.warning(f"[!] m3u8 URL bulunamadı: {title}")
-                
-                except Exception as e:
-                    logger.error(f"[!] Dizi işleme hatası ({series_url}): {e}")
-                    continue
-        
-        if not new_series_to_add:
-            logger.info(f"[!] Yeni dizi bulunamadı, {output_filename} dosyası güncellenmedi.")
-            return
-            
-        # Yalnızca yeni içerikler varsa dosyaya ekle
-        with open(output_filename, "a", encoding="utf-8") as f:
-            for result in new_series_to_add:
-                f.write(
-                    f'#EXTINF:-1 tvg-name="{result["title"]}" '
-                    f'tvg-language="Turkish" tvg-country="TR" '
-                    f'tvg-id="{result["tvg_id"]}" '
-                    f'tvg-logo="{result["logo_url"]}" '
-                    f'group-title="Diziler",{result["title"]}\n'
-                )
-                f.write(result["m3u8_url"].strip() + "\n")
-                logger.info(f"[✓] {result['title']} eklendi.")
-            
-        logger.info(f"\n[✓] {len(new_series_to_add)} yeni dizi başarıyla eklendi.")
+        with open(output_filename, "w", encoding="utf-8") as f:
+            f.write("#EXTM3U\n")
 
-# main fonksiyonunda process_series'i çağırırken doğru dosya adını kullanmayı unutmayın
+            for series_url in all_series_links:
+                try:
+                    title, logo_url = await get_series_metadata(session, series_url)
+                    logger.info(f"\n[+] İşleniyor: {title}")
+
+                    normalized_episodes = await get_episode_links(session, series_url)
+
+                    semaphore = asyncio.Semaphore(5)
+
+                    async def process_episode(ep_url, season_num, episode_num):
+                        async with semaphore:
+                            return await extract_m3u8_from_episode(session, ep_url, season_num, episode_num)
+
+                    tasks = [process_episode(ep_url, season_num, episode_num) for ep_url, season_num, episode_num in normalized_episodes]
+                    results = await asyncio.gather(*tasks, return_exceptions=True)
+
+                    for i, result in enumerate(results):
+                        if isinstance(result, Exception):
+                            logger.error(f"[!] Bölüm işleme hatası: {result}")
+                            continue
+
+                        episode_name, episode_num, m3u8_url = result
+                        if not m3u8_url:
+                            logger.warning(f"[!] m3u8 URL bulunamadı: {normalized_episodes[i][0]}")
+                            continue
+
+                        season_num = normalized_episodes[i][1]
+                        normalized_episode_num = normalized_episodes[i][2]
+                        display_name = f"{title} Sezon {season_num} Bölüm {normalized_episode_num}"
+                        tvg_id = sanitize_id(f"{title}_{season_num}_{normalized_episode_num}")
+
+                        f.write(
+                            f'#EXTINF:-1 tvg-name="{display_name}" '
+                            f'tvg-language="Turkish" tvg-country="TR" '
+                            f'tvg-id="{tvg_id}" '
+                            f'tvg-logo="{logo_url}" '
+                            f'group-title="{title}",{display_name}\n'
+                        )
+                        f.write(m3u8_url.strip() + "\n")
+                        logger.info(f"[✓] {display_name} eklendi.")
+
+                except Exception as e:
+                    logger.error(f"[!] Dizi işleme hatası: {e}")
+                    continue
+
+    logger.info(f"\n[✓] {output_filename} dosyası oluşturuldu.")
+
 async def main():
     start_time = time.time()
-    series_urls = await get_all_series_links_from_site() # Bu fonksiyonun adını kendi betiğinizdeki fonksiyona göre düzenleyin
+
+    series_urls = await get_series_from_homepage()
     if not series_urls:
         logger.error("[!] Dizi listesi boş, seçicileri kontrol et.")
         return
-    
-    await process_series(series_urls, output_filename="diziler.m3u")
-    
+
+    await process_series(series_urls)
+
     end_time = time.time()
     logger.info(f"\n[✓] Tüm işlemler tamamlandı. Süre: {end_time - start_time:.2f} saniye")
 
