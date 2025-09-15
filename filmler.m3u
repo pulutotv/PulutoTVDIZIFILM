@@ -1,4 +1,10 @@
 #EXTM3U
+#EXTINF:-1 tvg-name="Saatler" tvg-language="Turkish" tvg-country="TR" tvg-id="SAATLER" tvg-logo="https://dizifun5.com/images/data/2002_saatler.webp" group-title="Filmler",Saatler
+https://3.nejyoner19.workers.dev/?url=https://d3.premiumvideo.click/uploads/encode/f9wonc9h7pqkp42qjx4o/master.m3u8
+#EXTINF:-1 tvg-name="Arabulucu" tvg-language="Turkish" tvg-country="TR" tvg-id="ARABULUCU" tvg-logo="https://dizifun5.com/images/data/1998_arabulucu.webp" group-title="Filmler",Arabulucu
+https://3.nejyoner19.workers.dev/?url=https://d3.premiumvideo.click/uploads/encode/sps99rf2d4hip3kyivky/master.m3u8
+#EXTINF:-1 tvg-name="Dayan Zoey" tvg-language="Turkish" tvg-country="TR" tvg-id="DAYAN_ZOEY" tvg-logo="https://dizifun5.com/images/data/2014_dayan-zoey.webp" group-title="Filmler",Dayan Zoey
+https://3.nejyoner19.workers.dev/?url=https://d3.premiumvideo.click/uploads/encode/ttag5hsyqp8lpr3sygvk/master.m3u8
 #EXTINF:-1 tvg-name="Düşmanlar" tvg-language="Turkish" tvg-country="TR" tvg-id="DUSMANLAR" tvg-logo="https://dizifun5.com/images/data/2025_dusmanlar.webp" group-title="Filmler",Düşmanlar
 https://3.nejyoner19.workers.dev/?url=https://d3.premiumvideo.click/uploads/encode/y2hb98sb16wjsndyfqrq/master.m3u8
 #EXTINF:-1 tvg-name="Duman" tvg-language="Turkish" tvg-country="TR" tvg-id="DUMAN" tvg-logo="https://dizifun5.com/images/data/1995_duman.webp" group-title="Filmler",Duman
