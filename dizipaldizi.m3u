@@ -1,17 +1,39 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="" tvg-name="Nero the Assassin - S1 B1 - The Assassin" group-title="Nero the Assassin" tvg-logo="https://www.themoviedb.org/t/p/w500/twNHmxeFkDEdGzYMeGTp9stoGUC.jpg",S1 B1 - The Assassin
-https://y3k9.uk-traffic-076.com/hls2/02/00027/,kdqbf3jaq7wq_n,.urlset/master.m3u8?t=yMJzikwOXQSbtfYH37JSrgeNtfTuX72LwJnHkITM4_A&s=1764990132&e=43200&f=138095&srv=x1&i=0.0&sp=5000&fr=kdqbf3jaq7wq&p1=y3k9&p2=y3k9
-#EXTINF:-1 tvg-id="" tvg-name="Nero the Assassin - S1 B2 - The Witch" group-title="Nero the Assassin" tvg-logo="https://www.themoviedb.org/t/p/w500/twNHmxeFkDEdGzYMeGTp9stoGUC.jpg",S1 B2 - The Witch
-https://pjs1.uk-traffic-076.com/hls2/02/00027/,wawsrl54c42o_n,.urlset/master.m3u8?t=uSkicamsxCeATXotTxRd5WWsIQze176VFCUMX11gkPw&s=1764990134&e=43200&f=138096&srv=x1&i=0.0&sp=5000&fr=wawsrl54c42o&p1=pjs1&p2=pjs1
-#EXTINF:-1 tvg-id="" tvg-name="Nero the Assassin - S1 B3 - The Princess" group-title="Nero the Assassin" tvg-logo="https://www.themoviedb.org/t/p/w500/twNHmxeFkDEdGzYMeGTp9stoGUC.jpg",S1 B3 - The Princess
-https://sn12.uk-traffic-076.com/hls2/02/00027/,jmx724ok7z4h_n,.urlset/master.m3u8?t=D_xGdP-4AZ795IoM0WobN0nFZnjZqD9UU06xaixcVss&s=1764990136&e=43200&f=138097&srv=x1&i=0.0&sp=5000&fr=jmx724ok7z4h&p1=sn12&p2=sn12
-#EXTINF:-1 tvg-id="" tvg-name="Nero the Assassin - S1 B4 - The Inquisitor" group-title="Nero the Assassin" tvg-logo="https://www.themoviedb.org/t/p/w500/twNHmxeFkDEdGzYMeGTp9stoGUC.jpg",S1 B4 - The Inquisitor
-https://u2ks.uk-traffic-076.com/hls2/02/00027/,cnwj50aqm8wv_n,.urlset/master.m3u8?t=FmVjXOC1MDQYdMiYB4qggugfP1e-yz4m4SKJ0zLRNxc&s=1764990138&e=43200&f=138098&srv=x1&i=0.0&sp=5000&fr=cnwj50aqm8wv&p1=u2ks&p2=u2ks
-#EXTINF:-1 tvg-id="" tvg-name="Nero the Assassin - S1 B5 - The Villain" group-title="Nero the Assassin" tvg-logo="https://www.themoviedb.org/t/p/w500/twNHmxeFkDEdGzYMeGTp9stoGUC.jpg",S1 B5 - The Villain
-https://p2km.uk-traffic-076.com/hls2/02/00027/,l1nu5iet3rug_n,.urlset/master.m3u8?t=AhYas0kI1d-y2IMqRwb0QUtU88jc-P3hjBQVeEjB6OM&s=1764990140&e=43200&f=138099&srv=x1&i=0.0&sp=5000&fr=l1nu5iet3rug&p1=p2km&p2=p2km
-#EXTINF:-1 tvg-id="" tvg-name="Nero the Assassin - S1 B6 - The Monk" group-title="Nero the Assassin" tvg-logo="https://www.themoviedb.org/t/p/w500/twNHmxeFkDEdGzYMeGTp9stoGUC.jpg",S1 B6 - The Monk
-https://u2ks.uk-traffic-076.com/hls2/02/00027/,1aftsksg8wce_n,.urlset/master.m3u8?t=xLmBtFQk1VUv3FKbLAswAu-aNzL-Kfma1BPQGaZRe2w&s=1764990142&e=43200&f=138092&srv=x1&i=0.0&sp=5000&fr=1aftsksg8wce&p1=u2ks&p2=u2ks
-#EXTINF:-1 tvg-id="" tvg-name="Nero the Assassin - S1 B7 - The Archbishop" group-title="Nero the Assassin" tvg-logo="https://www.themoviedb.org/t/p/w500/twNHmxeFkDEdGzYMeGTp9stoGUC.jpg",S1 B7 - The Archbishop
-https://ksm2.uk-traffic-076.com/hls2/02/00027/,a406j81cy8tf_n,.urlset/master.m3u8?t=Lb4tZHv2qgvX431W4xZyweSkCnBxgatBKwu4i783Tvg&s=1764990144&e=43200&f=138093&srv=x1&i=0.0&sp=5000&fr=a406j81cy8tf&p1=ksm2&p2=ksm2
-#EXTINF:-1 tvg-id="" tvg-name="Nero the Assassin - S1 B8 - The Girl" group-title="Nero the Assassin" tvg-logo="https://www.themoviedb.org/t/p/w500/twNHmxeFkDEdGzYMeGTp9stoGUC.jpg",S1 B8 - The Girl
-https://dn2p.uk-traffic-076.com/hls2/02/00027/,ko6506njh1l1_n,.urlset/master.m3u8?t=NL84e_g-6clfNbDwYAR-TGbS-yewdv_QXMi9ZDUHgRA&s=1764990146&e=43200&f=138094&srv=x1&i=0.0&sp=5000&fr=ko6506njh1l1&p1=dn2p&p2=dn2p
+#EXTINF:-1 tvg-id="" tvg-name="The Walking Dead: Daryl Dixon - S1 B1 - Lame Perdue" group-title="The Walking Dead: Daryl Dixon",S1 B1 - Lame Perdue
+https://pa2s.uk-traffic-076.com/hls2/01/00017/,vk95nbgolmc4_n,.urlset/master.m3u8?t=8DkP0H405Sea4rH1dVic0wAunSRuh8GSSSExwx56RkI&s=1764989669&e=43200&f=89999&srv=x2&i=0.0&sp=5000&fr=vk95nbgolmc4&p1=pa2s&p2=pa2s
+#EXTINF:-1 tvg-id="" tvg-name="The Walking Dead: Daryl Dixon - S1 B2 - Alouette" group-title="The Walking Dead: Daryl Dixon",S1 B2 - Alouette
+https://xn2m.uk-traffic-076.com/hls2/02/00021/,ofn5rhodlmfp_n,.urlset/master.m3u8?t=F1TRyzVSXvwd7qpMzoLLs4qwfgnaaHIMzasPZzDmuu8&s=1764989672&e=43200&f=106772&srv=x1&i=0.0&sp=5000&fr=ofn5rhodlmfp&p1=xn2m&p2=xn2m
+#EXTINF:-1 tvg-id="" tvg-name="The Walking Dead: Daryl Dixon - S1 B3 - Paris Sera Toujours Paris" group-title="The Walking Dead: Daryl Dixon",S1 B3 - Paris Sera Toujours Paris
+https://o23m.uk-traffic-076.com/hls2/01/00018/,cdut4e104gj7_n,.urlset/master.m3u8?t=TjvIdFyfj9VZPPhJE4qBfV_o9cCkOHBoZzGKZ-R0ouk&s=1764989674&e=43200&f=90001&srv=x2&i=0.0&sp=5000&fr=cdut4e104gj7&p1=o23m&p2=o23m
+#EXTINF:-1 tvg-id="" tvg-name="The Walking Dead: Daryl Dixon - S1 B4 - La Dame De Fer" group-title="The Walking Dead: Daryl Dixon",S1 B4 - La Dame De Fer
+https://sn12.uk-traffic-076.com/hls2/01/00018/,2rily72ylxpz_n,.urlset/master.m3u8?t=_KtKykynyAzFIzwfmDYM_EiaNhYSFRjtcghNKV-grSs&s=1764989676&e=43200&f=90002&srv=x2&i=0.0&sp=5000&fr=2rily72ylxpz&p1=sn12&p2=sn12
+#EXTINF:-1 tvg-id="" tvg-name="The Walking Dead: Daryl Dixon - S1 B5 - Deux Amours" group-title="The Walking Dead: Daryl Dixon",S1 B5 - Deux Amours
+https://sm21.uk-traffic-076.com/hls2/01/00018/,43w356xjqwue_n,.urlset/master.m3u8?t=Vd6THlnYkTY5-PPYhuEsuyRBO5gE6TaI66O6E_m5vyg&s=1764989678&e=43200&f=90003&srv=x2&i=0.0&sp=5000&fr=43w356xjqwue&p1=sm21&p2=sm21
+#EXTINF:-1 tvg-id="" tvg-name="The Walking Dead: Daryl Dixon - S1 B6 - Coming Home" group-title="The Walking Dead: Daryl Dixon",S1 B6 - Coming Home
+https://p2km.uk-traffic-076.com/hls2/01/00018/,lmimavipzyxv_n,.urlset/master.m3u8?t=5K4j2BmoEQdRCT2GuKxyOKGwmGJk7Xoxhg44DuBqPeY&s=1764989680&e=43200&f=90004&srv=x2&i=0.0&sp=5000&fr=lmimavipzyxv&p1=p2km&p2=p2km
+#EXTINF:-1 tvg-id="" tvg-name="The Walking Dead: Daryl Dixon - S2 B1 - The Book of Carol: La gentillesse des étrangers" group-title="The Walking Dead: Daryl Dixon",S2 B1 - The Book of Carol: La gentillesse des étrangers
+https://kde2.uk-traffic-076.com/hls2/01/00025/,28q519wyhxf6_n,.urlset/master.m3u8?t=xTeG7kQPKjrWxD4ssJ70LGPARN0wVUmHtAXZnhISpD8&s=1764989682&e=43200&f=125601&srv=x2&i=0.0&sp=5000&fr=28q519wyhxf6&p1=kde2&p2=kde2
+#EXTINF:-1 tvg-id="" tvg-name="The Walking Dead: Daryl Dixon - S2 B2 - 2. Bölüm" group-title="The Walking Dead: Daryl Dixon",S2 B2 - 2. Bölüm
+https://9k2m.uk-traffic-076.com/hls2/01/00025/,6dosqgci2wf2_n,.urlset/master.m3u8?t=Pv1SUIyC18V_XZbOWwJaJwD9AKe3SY2U_TP1zrn1sY0&s=1764989684&e=43200&f=125616&srv=x2&i=0.0&sp=5000&fr=6dosqgci2wf2&p1=9k2m&p2=9k2m
+#EXTINF:-1 tvg-id="" tvg-name="The Walking Dead: Daryl Dixon - S2 B3 - 3. Bölüm" group-title="The Walking Dead: Daryl Dixon",S2 B3 - 3. Bölüm
+https://pa2s.uk-traffic-076.com/hls2/02/00025/,6o3tdsw85q0l_n,.urlset/master.m3u8?t=GMmSy_iDz9Nkhy6CpZqrA35Y14aaa8nRfZvq_zlZUAk&s=1764989686&e=43200&f=125661&srv=x1&i=0.0&sp=5000&fr=6o3tdsw85q0l&p1=pa2s&p2=pa2s
+#EXTINF:-1 tvg-id="" tvg-name="The Walking Dead: Daryl Dixon - S2 B4 - 4. Bölüm" group-title="The Walking Dead: Daryl Dixon",S2 B4 - 4. Bölüm
+https://u2ks.uk-traffic-076.com/hls2/01/00025/,cpma6ozsj389_n,.urlset/master.m3u8?t=s-zZNNRAcdGxT_lF4BS2Ug2G_3RVUAKOqLIUwj4PSVg&s=1764989688&e=43200&f=125659&srv=x2&i=0.0&sp=5000&fr=cpma6ozsj389&p1=u2ks&p2=u2ks
+#EXTINF:-1 tvg-id="" tvg-name="The Walking Dead: Daryl Dixon - S2 B5 - 5. Bölüm" group-title="The Walking Dead: Daryl Dixon",S2 B5 - 5. Bölüm
+https://pa2s.uk-traffic-076.com/hls2/01/00025/,ql050xaafv6o_n,.urlset/master.m3u8?t=G39bXav13Fg6132dcCwnZeDlqXY7Daw_2mzoXwzZ55E&s=1764989690&e=43200&f=125691&srv=x1&i=0.0&sp=5000&fr=ql050xaafv6o&p1=pa2s&p2=pa2s
+#EXTINF:-1 tvg-id="" tvg-name="The Walking Dead: Daryl Dixon - S2 B6 - 6. Bölüm" group-title="The Walking Dead: Daryl Dixon",S2 B6 - 6. Bölüm
+https://jfn2.uk-traffic-076.com/hls2/01/00025/,3xulyvgujw8b_n,.urlset/master.m3u8?t=CoijSGn-mxx8IQiQr4sHqZzgB8l4kTqw6_AsZVffy-w&s=1764989692&e=43200&f=125700&srv=x2&i=0.0&sp=5000&fr=3xulyvgujw8b&p1=jfn2&p2=jfn2
+#EXTINF:-1 tvg-id="" tvg-name="The Walking Dead: Daryl Dixon - S3 B1 - Costa da Morte" group-title="The Walking Dead: Daryl Dixon",S3 B1 - Costa da Morte
+https://sn12.uk-traffic-076.com/hls2/01/00027/,ewd3lctv2vm1_n,.urlset/master.m3u8?t=7Ds-GNzbAF_TdK0jChvticx1eePYGS0YxqqU3yaK5ZY&s=1764989694&e=43200&f=138030&srv=x2&i=0.0&sp=5000&fr=ewd3lctv2vm1&p1=sn12&p2=sn12
+#EXTINF:-1 tvg-id="" tvg-name="The Walking Dead: Daryl Dixon - S3 B2 - La Ofrenda" group-title="The Walking Dead: Daryl Dixon",S3 B2 - La Ofrenda
+https://p2km.uk-traffic-076.com/hls2/02/00027/,fcnoqkyzp3kp_n,.urlset/master.m3u8?t=kr_Zb4wIDLuofbFStvTvypKjdM9HxMSEw4LRJXQMTYw&s=1764989696&e=43200&f=138041&srv=x1&i=0.0&sp=5000&fr=fcnoqkyzp3kp&p1=p2km&p2=p2km
+#EXTINF:-1 tvg-id="" tvg-name="The Walking Dead: Daryl Dixon - S3 B5 - Limbo" group-title="The Walking Dead: Daryl Dixon",S3 B5 - Limbo
+https://sn12.uk-traffic-076.com/hls2/02/00027/,w5ldky25dwq4_n,.urlset/master.m3u8?t=WVOVJV5BWfTwQtIKwht3XJ6Yu2jH7iCYiqDBgD1h8k8&s=1764989698&e=43200&f=138068&srv=x1&i=0.0&sp=5000&fr=w5ldky25dwq4&p1=sn12&p2=sn12
+#EXTINF:-1 tvg-id="" tvg-name="The Walking Dead: Daryl Dixon - S3 B3 - El Sacrificio" group-title="The Walking Dead: Daryl Dixon",S3 B3 - El Sacrificio
+https://xn2m.uk-traffic-076.com/hls2/02/00027/,y3wbbm7uhdti_n,.urlset/master.m3u8?t=e1jFxnQxukQqOpR2qIOA05RBMep4Hv3waZoEsZlVjFs&s=1764989700&e=43200&f=138067&srv=x1&i=0.0&sp=5000&fr=y3wbbm7uhdti&p1=xn2m&p2=xn2m
+#EXTINF:-1 tvg-id="" tvg-name="The Walking Dead: Daryl Dixon - S3 B4 - La Justicia Fronteriza" group-title="The Walking Dead: Daryl Dixon",S3 B4 - La Justicia Fronteriza
+https://u2ks.uk-traffic-076.com/hls2/02/00027/,0lhgc0v9p1ai_n,.urlset/master.m3u8?t=wtWLOD7NG25lmTHRpuzL_IAkozLPGI3hg9Xr5q7kDJU&s=1764989702&e=43200&f=138066&srv=x1&i=0.0&sp=5000&fr=0lhgc0v9p1ai&p1=u2ks&p2=u2ks
+#EXTINF:-1 tvg-id="" tvg-name="The Walking Dead: Daryl Dixon - S3 B6 - 6. Bölüm" group-title="The Walking Dead: Daryl Dixon",S3 B6 - 6. Bölüm
+https://m2sa.uk-traffic-076.com/hls2/01/00027/,6ajn5zxhghrh_n,.urlset/master.m3u8?t=Yl7spqqf2zBGt9Ih5dZXSeM8lCUU_Iow6F-XHGFZPZE&s=1764989704&e=43200&f=138082&srv=x2&i=0.0&sp=5000&fr=6ajn5zxhghrh&p1=m2sa&p2=m2sa
+#EXTINF:-1 tvg-id="" tvg-name="The Walking Dead: Daryl Dixon - S3 B7 - 7. Bölüm" group-title="The Walking Dead: Daryl Dixon",S3 B7 - 7. Bölüm
+https://ka5m.uk-traffic-076.com/hls2/01/00027/,g9jrzblaxrxh_n,.urlset/master.m3u8?t=mmQ7SoLSiJulV7hDBIHC_PYx5TZH9yKXRNFMYq8TpOQ&s=1764989706&e=43200&f=138087&srv=x2&i=0.0&sp=5000&fr=g9jrzblaxrxh&p1=ka5m&p2=ka5m
